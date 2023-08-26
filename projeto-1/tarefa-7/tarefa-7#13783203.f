@@ -1,5 +1,5 @@
         program MonteCarlo
-        integer d, n
+        integer iDimen, iPart
         real*8 n_dentro, n_total, vol
         real dist
         dist = 0.d0 
@@ -7,13 +7,13 @@
         n_total = 0.0d0
 
         write(*,*) "Digite o número de dimensões da esfera"
-        read(*,*) d
+        read(*,*) iDimen
         write(*,*) "Digite o número de partículas"
-        read(*,*) n
+        read(*,*) iPart
 
-        do i=1, n
+        do i=1, iPart
           dist = 0.0d0
-          do j=1, d
+          do j=1, iDimen
             a = rand()
             dist = dist + (a-0.5d0)**(2.0d0)
           end do
@@ -23,5 +23,5 @@
           n_total = n_total + 1.0d0
         end do
         vol = n_dentro/n_total
-        write(*,*) "O volume da esfera em ", d, " dimensões é ", vol
+        write(*,*) "O volume em ", iDimen, " dimensões é ", vol
         end program

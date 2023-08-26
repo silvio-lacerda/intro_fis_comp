@@ -1,17 +1,17 @@
         program Log
         real*8 x
-        real*8 lnSerie, lnFortran, ln2
+        real*8 aLnSerie, aLnFortran, aLn2
         real*8 logNatty
         iLn = 0
         
         write(*,*) "Digite um número: "
         read(*,*) x
-        lnFortran = dLog(x)
-        lnSerie = 0.d0
-        ln2 = 0.d0
+        aLnFortran = dLog(x)
+        aLnSerie = 0.d0
+        aLn2 = 0.d0
 
         if (x .GT. 2) then 
-          ln2 = logNatty(2.d0)
+          aLn2 = logNatty(2.d0)
         end if
 
         do
@@ -22,29 +22,29 @@
             exit
           end if
         end do
-        lnSerie = logNatty(x) + iLn*ln2 
+        aLnSerie = logNatty(x) + iLn*aLn2 
 
-        write(*,*) "Log do fortran: ", lnFortran
-        write(*,*) "Log por série: ", lnSerie
+        write(*,*) "Log do fortran: ", aLnFortran
+        write(*,*) "Log por série: ", aLnSerie
 
         end program
 
         real*8 function logNatty(a)
         real*8 a, aux, eperc
-        real*8 lnS
+        real*8 aLlnS
         i = 1
         eperc = 1e-7
-        lnS = 0.0d0
+        aLnS = 0.0d0
              
         do 
           aux = ((1.0d0-a)**i)/i
-          lnS = lnS + aux
+          aLnS = aLnS + aux
           i = i + 1
           if (abs(aux) .LT. eperc) then
             exit
           end if
         end do 
-        logNatty = -lnS 
+        logNatty = -aLnS 
         return
         end function
 
