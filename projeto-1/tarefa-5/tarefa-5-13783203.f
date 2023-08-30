@@ -1,7 +1,6 @@
         program Log
         real*8 x, aLnFortran, aLnSerie
         real*8 logNatty
-        iLn = 0
         
         write(*,*) "Digite um número: "
         read(*,*) x
