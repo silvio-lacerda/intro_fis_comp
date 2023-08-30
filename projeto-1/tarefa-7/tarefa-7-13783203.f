@@ -1,5 +1,4 @@
         program MonteCarlo
-        integer iDimen, iPart
         real*8 n_dentro, n_total, vol
         real dist
         dist = 0.d0 

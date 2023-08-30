@@ -1,6 +1,5 @@
         program Log
-        real*8 x
-        real*8 aLnSerie, aLnFortran, aLn2
+        real*8 x, aLnFortran, aLnSerie, aLn2
         real*8 logNatty
         iLn = 0
         

@@ -2,7 +2,7 @@
         write(*,*) "Digite um número inteiro"
         read(*,*) n  
 
-        open(unit=1, file="saida-4#13783203.txt", status="new")
+        open(unit=1, file="saida-4-13783203.txt", status="new")
         if (n .GT. 1) then
           j = 2
 1         if (j .LE. n) then

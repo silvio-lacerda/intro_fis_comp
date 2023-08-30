@@ -2,17 +2,16 @@
         real*8 g, vol
         real*8 r, PI
         real*8 aux1, aux2
-        integer d
 
         PI = 4.0d0*ATAN(1.0)
         
         write(*,*) "Digite quantas dimensões tem a esfera"
-        read(*,*) d
+        read(*,*) iDimen
         write(*,*) "Digite o raio da esfera"
         read(*,*) r
 
         open(unit=1,file="dimensoes-esferas.dat", status="new")
-        do i=2, d
+        do i=2, iDimen
           d_i = real(i,8)
           aux1 = g(d_i/2.0d0 + 1.0d0)
           aux2 = ((PI**(d_i/2.0d0))*(r**d_i))
