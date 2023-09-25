@@ -39,14 +39,14 @@
         end do
 
 
-        open(unit=1, file="saida-3-13783203.dat", status="new")
-        do i=1,lim
+        open(unit=1, file="saida-3-13783203.dat")
+        do i=1,n_andarilhos
           write(1,*) vec_x(i), vec_y(i)
         end do
         close(unit=1)
 
-        aMedia = aMedia/real(m)
-        aMediaQ = aMediaQ/real(m)
+        aMedia = aMedia/real(n_andarilhos)
+        aMediaQ = aMediaQ/real(n_andarilhos)
 
         write(*,*) "Valor esperado de <r>: ", aMedia
         write(*,*) "Valor espeerado de <r^2>: ", aMediaQ
