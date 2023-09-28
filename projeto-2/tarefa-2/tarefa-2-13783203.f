@@ -39,8 +39,6 @@
         p_foward = 1.e0/2.e0 ! essa parte é alterada conforme a necessidade
         goFoward = .FALSE.
         i_path = 0
-        nd = 0
-        ne = 0
         
         do i=1, n
           goFoward = rand() .LE. p_foward

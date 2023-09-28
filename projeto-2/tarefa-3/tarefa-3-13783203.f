@@ -1,6 +1,6 @@
         program Andarilh2D
         parameter (n_andarilhos=1000)
-        parameter (n_passos=1000)
+        parameter (n_passos=1000000)
         dimension vec_x(n_andarilhos)
         dimension vec_y(n_andarilhos)
         dimension i_r(2)
@@ -38,8 +38,7 @@
           vec_y(j) = i_r(2)
         end do
 
-
-        open(unit=1, file="saida-3-13783203.dat")
+        open(unit=1, file="saida-3-13783203-1000000.dat")
         do i=1,n_andarilhos
           write(1,*) vec_x(i), vec_y(i)
         end do
