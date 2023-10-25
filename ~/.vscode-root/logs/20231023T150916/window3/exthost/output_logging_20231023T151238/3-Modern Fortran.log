@@ -1,0 +1,150 @@
+["INFO" - 3:14:49 PM] Extension Name: Modern Fortran
+["INFO" - 3:14:49 PM] Extension Version: 3.2.0
+["INFO" - 3:14:49 PM] Linter set to: gfortran
+["INFO" - 3:14:49 PM] Formatter set to: findent
+["INFO" - 3:14:49 PM] Autocomplete set to: fortls
+["INFO" - 3:14:49 PM] Hover set to: fortls
+["INFO" - 3:14:49 PM] Symbols set to: fortls
+["INFO" - 3:14:49 PM] Fortran Language Server
+["INFO" - 3:27:15 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:27:15 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:27:15 PM] Linter.include:
+
+["INFO" - 3:27:32 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:27:32 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:34:44 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:34:44 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 2:35:29 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 2:35:29 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 2:42:24 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 2:42:24 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 2:42:33 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 2:42:33 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 2:42:40 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 2:42:40 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 2:44:15 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 2:44:15 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 2:44:41 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 2:44:41 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 2:45:39 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 2:45:39 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 2:48:08 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 2:48:08 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 2:57:10 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 2:57:10 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 2:57:58 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 2:57:58 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:00:23 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:00:23 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:00:26 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:00:26 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:01:26 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:01:26 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:03:55 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:03:55 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:04:00 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:04:00 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:04:01 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:04:01 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:04:54 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:04:54 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:05:37 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:05:37 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:05:55 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:05:55 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:06:07 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:06:07 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:07:26 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:07:26 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:07:35 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:07:35 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:08:17 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:08:17 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:12:47 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:12:47 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none
+["INFO" - 3:16:20 PM] using linter: gfortran located in: /usr/bin/gfortran
+["INFO" - 3:16:20 PM] Linter.arguments:
+-Wall
+-ffree-line-length-none
+-ffixed-line-length-none

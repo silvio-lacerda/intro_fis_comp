@@ -1,0 +1,9 @@
+2023-10-23 15:12:36.641 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-dotnettools.dotnet-interactive-vscode' wants API proposal 'languageConfigurationAutoClosingPairs' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2023-10-23 15:12:36.659 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'terminalContextMenu' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2023-10-23 15:12:40.412 [info] [perf] Render performance baseline is 84ms
+2023-10-23 15:12:47.770 [error] Error while registering log channel file:///media/silvio/8C78CE0A78CDF34E/Users/silvi/Documents/GitHub/intro_fis_comp/~/.vscode-root/logs/20231023T150916/sharedprocess.log Timed out while waiting for file to be created
+2023-10-23 15:12:47.778 [error] Error while registering log channel file:///media/silvio/8C78CE0A78CDF34E/Users/silvi/Documents/GitHub/intro_fis_comp/~/.vscode-root/logs/20231023T150916/userDataSync.log Timed out while waiting for file to be created
+2023-10-23 15:12:47.780 [error] Error while registering log channel file:///media/silvio/8C78CE0A78CDF34E/Users/silvi/Documents/GitHub/intro_fis_comp/~/.vscode-root/logs/20231023T150916/main.log Timed out while waiting for file to be created
+2023-10-23 15:12:48.360 [error] Error while registering log channel file:///media/silvio/8C78CE0A78CDF34E/Users/silvi/Documents/GitHub/intro_fis_comp/~/.vscode-root/logs/20231023T150916/ptyhost.log Timed out while waiting for file to be created
+2023-10-23 15:14:49.083 [error] [Extension Host] (node:16791) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
