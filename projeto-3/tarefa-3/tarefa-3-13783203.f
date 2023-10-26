@@ -58,7 +58,6 @@
         x0 = -10
         dx = 1e-1
         j = 1
-        c = 0.1
 	do while(j .lt. 4)
 	do while(f(x)*f(x+dx) .gt. 0)
 	   x=x0+i*dx
