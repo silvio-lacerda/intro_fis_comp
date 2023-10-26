@@ -3,23 +3,10 @@
         real*8 newtonRaphson, metodoSecante
         dimension r(3)
         r = [-7, 2, 9]
-        
-        x0 = -10
-        err = 10**(-6)
-        j = 1
-        c = 0.1
-        
+         
         open(unit=1, file="saida-3-13783203.txt")
         write(1,*) "Método da Procura Direta"
-        do while (j .lt. 4)
-          if (f(x0)*f(x0+c) .lt. 0.0) then
-            a = x0
-            b = x0 + c
-            call procuraDireta(a,b,j)
-            j = j+1
-          end if
-          x0 = x0 + c
-        end do
+        call procuraDireta()
         
 
         write(1,*) "Método de Newton-Raphson"
@@ -64,28 +51,58 @@
         return
         end function
         
-        subroutine procuraDireta(a,b,j)
+        subroutine procuraDireta()
         implicit real*8 (a-h, o-z)
-        dx=1e-1 
-        do while(f(a)*f(b).GT.0)
-           a=x0+i*dx
-           i=i+1
-        end do
-        b0=b
-        c=b-a
-        cont=0
-        xm=(a+b)/2
-        do while((c.GT.1e-6).or.(abs(f(xm)).GT.10e-6))
-           if (f(xm)*f(a).LT.0) then
-              b=xm
-           else if(f(xm)*f(a).GT.0) then
-              a=xm
-           end if
-        c=b-a
-        xm=(a+b)/2
-        cont=cont+1
+        dimension r_pd(3)
+        dimension cont_pd(3)
+        x0 = -10
+        dx = 1e-1
+        j = 1
+        c = 0.1
+	do while(j .lt. 4)
+	do while(f(x)*f(x+dx) .gt. 0)
+	   x=x0+i*dx
+	   i=i+1
+	end do
+	a=x
+	b=x+dx
+	c=b-a
+	cont=0
+	xm=(a+b)/2
+	do while((c .gt. 1e-6) .or. (abs(f(xm)) .gt. 10e-6))
+	  if (f(xm)*f(a).LT.0) then
+	    b=xm
+	  else if(f(xm)*f(a) .gt. 0) then
+	    a=xm
+	  end if
+	c=b-a
+	xm=(a+b)/2
+	cont=cont+1
+	if(cont .gt. 100) then
+	    ! limite de iterações excedido
+    	  stop
+	end if
+	end do
+	r_pd(j)=xm
+	cont_pd(j) = cont
+	x=b+dx
+	j=j+1
+      	end do
+      	write(1,*) maxv(cont_pd), r_pd(1), r_pd(2), r_pd(3)
         return
         end
+        
+        integer function maxv(arrr)
+        implicit real*8 (a-h, o-z)
+        dimension arrr(3)
+        temp = arrr(1)
+        do l=1, 3
+       	  if (arrr(l) .GT. temp) then
+       	    temp = arrr(l)
+       	   end if
+        end do
+        maxv = temp
+        end function
 
         real*8 function newtonRaphson(x)
         real*8 x, f, df
